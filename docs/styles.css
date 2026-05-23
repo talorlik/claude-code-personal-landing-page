@@ -308,6 +308,27 @@ section h2 {
   margin-bottom: 1rem;
 }
 
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card-grid .card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.testimonial-card {
+  justify-content: space-between;
+}
+
+.testimonial-card .meta {
+  margin: 1rem 0 0;
+}
+
 .card h3 {
   margin: 0 0 0.35rem;
   font-size: clamp(1.05rem, 3vw, 1.15rem);
